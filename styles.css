@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+/*font-family: 'Quicksand', sans-serif;*/
+
+/* HEADER
+---------------------------------------------------*/
+
+header {
+    display: flex;
+    width: 1395px;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    margin-right: 27px;
+}
+
+.link-menu {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 135px;
+    margin-left: 294px;
+    margin-right: 59px;
+}
+
+.link-menu a {
+    margin: 0px 10px 0px 10px;
+}
+
+
+#harebell-logo {
+    margin-top: 115px;
+}
+
+.icons-menu {
+    margin-top: 131px;
+    justify-content: right;
+}
+
+.icons-menu img:first-child {
+    margin-right: 27px;
+}
+
+p {
+    display:inline;
+ 
+}
+li {
+    margin: 10px 0;
+  
+}
+
+ul {
+writing-mode: horizontal-tb;
+text-align: left;
+
+}
+
+.footer table {
+    height: 200px;
+    text-align: left;
+   
+}
+footer {
+    width: 100vw;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer1 {
+    background-color: #C6D794;
+    display:  flex;
+    height: 300px;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    padding-top: 88px;
+}
+
+
+.footer-list-title {
+    color: #424B25;
+   
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
