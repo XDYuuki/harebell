@@ -10,13 +10,14 @@
 
 header {
     display: flex;
-    width: 1395px;
+    width: 100vw;
     justify-content: space-between;
 }
 
 .header-links {
     display: flex;
     margin-right: 27px;
+    color: black;
 }
 
 .link-menu {
@@ -29,7 +30,11 @@ header {
 }
 
 .link-menu a {
-    margin: 0px 10px 0px 10px;
+    margin: 0 0 0 15px;
+}
+.link-menu span a{
+    margin-left: 15px;
+    margin-right: 0px;
 }
 
 
@@ -87,4 +92,30 @@ footer {
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
+}
+
+.footer2 {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #63713A;
+
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px 90px;
+}
+
+.footer2 p {
+    color: #63713A;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.footer2 p span {
+    font-weight: 600;
+}
+
+.social-media-icon img {
+    margin: 0 8px;
 }
