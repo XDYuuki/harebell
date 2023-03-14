@@ -1,1 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 /*Especifics stypes for Home Page*/
+
+body {
+    background-image: url(../assets/blobBanner.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* background-attachment: fixed; */
+}
+.our-story{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-story-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+    margin-top: 200px;
+}
+
+.our-story-text p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+    color: #363D1E;
+}
+
+.our-story-text p:first-child {
+    font-family: 'Abril Fatface', cursive;
+    color: #636363;
+    font-size: 80pt;
+    margin-bottom: 20px;
+}
+
