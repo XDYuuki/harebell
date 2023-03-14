@@ -1,1 +1,19 @@
-/*Especifics stypes for Home Page*/
+/*specific stypes for Home Page*/
+
+.blob-flowers {
+    /* background-image: url(../assets/blobAndFLowers.svg);
+    background-repeat: no-repeat; */
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.meet-our-staff {
+/* left: 521px;
+right: 36.2%;
+top: 34.95%;
+bottom: 54.38%; */
+display: flex;
+flex-direction: column;
+
+}
