@@ -87,4 +87,33 @@ body {
 .icon-baner p {
     font-family: 'Old Standard TT', serif;
     font-weight: 700;
+    color: black;
+    margin-top: 5%;
+}
+
+.hover-icon {
+    display: none;
+}
+
+.icon-baner img {
+    /* width: 140px;
+    height: 140px; */
+    width: 55%;
+    height: 55%;
+}
+
+.icon-baner:hover{
+    background-color: #606060;
+}
+
+.icon-baner:hover .hover-icon {
+    display: inline;
+}
+
+.icon-baner:hover img:first-child {
+    display: none;
+}
+
+.icon-baner:hover p {
+    color: white;
 }
