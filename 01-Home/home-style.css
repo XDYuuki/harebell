@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+
+
 
 /*Especifics stypes for Home Page*/
 
@@ -11,6 +15,7 @@ body {
     background-position: right top;
     /* background-attachment: fixed; */
 }
+
 .our-story{
     display: flex;
     justify-content: space-between;
@@ -25,14 +30,61 @@ body {
 
 .our-story-text p {
     font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     font-size: 16pt;
     color: #363D1E;
 }
 
 .our-story-text p:first-child {
     font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
     color: #636363;
     font-size: 80pt;
     margin-bottom: 20px;
 }
 
+.show-now-link {
+    background-color: #6C6C6C;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    height: 40px;
+    width: 173px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    margin-top: 46px;
+}
+
+.icons-square-banners {
+    width: 100vw;
+    background-color: #DFEABF;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-baner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 274px;
+    height: 274px;
+    background-color: white;
+
+    border-radius: 0 20px 0 20px;
+
+    margin-left: 15px;
+}
+
+.icon-baner p {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+}
