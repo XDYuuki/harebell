@@ -1,1 +1,62 @@
-/*Especifics stypes for Home Page*/
+/*Especifics stypes for Acessories Page*/
+
+.banner {
+    margin: auto;
+    background-color: #C9D79C;
+    width: 100%;
+}
+
+
+#shop-section {
+    width: 90%;
+    margin: auto;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5%;
+}
+
+.container-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+}
+
+.shop-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+ }
+
+ .shop-cart:hover {
+ opacity: 0.3;
+ }
+
+.item-name, .item-price {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.item-description {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
