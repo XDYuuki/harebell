@@ -1,1 +1,37 @@
 /*Especifics stypes for Home Page*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{background-image: url(../11-Contact/Assets/Blob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+label{padding: 4px;
+    font-family:'Quicksand', sans-serif;
+    font-size: 115%;
+    color: gray}
+
+
+.form-control{padding: 20px;}
+
+.btn{background-color: #424B25;
+color: white;
+font-size: 130%;
+padding: 7px;
+margin-top: 40px;
+border: none;}
+
+.btn:hover{background-color: #424b2554}
+
+.col-4 img {width: 250px;
+padding-bottom: 40px;
+    padding-top:270px;}
+
+.information {justify-content: right;
+            text-align: right;
+            font-family:'Quicksand', sans-serif;
+            font-size: 120%;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            }
