@@ -1,1 +1,39 @@
 /*Especifics stypes for Home Page*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.bannertitle img{width:100%}
+
+.blogposts{width: 75%;
+            margin: auto;
+            padding-top: 7vh;}
+
+.row {display: flex;
+    flex-wrap: wrap;
+    }
+
+.column {flex-basis: 33%;    
+}
+
+.column a {width: 100%;
+            padding: 5px;
+            }
+
+.column a:hover {opacity: 0.5;
+                transition: 0,5s;}
+
+.banner {width: 70%;
+        margin: auto;
+        padding-top: 7vh;
+        padding-bottom: 7vh;}
+
+.title{color: #424B25;
+      font-family:'Quicksand', sans-serif;
+      font-size: 300%;
+      padding-bottom: 5vh;}
+
+.rowbanner {display: flex;
+    flex-wrap: wrap; }
+
+.columnbanner {flex-basis: 40%;    
+}
