@@ -1,1 +1,105 @@
-/*Especifics stypes for Home Page*/
+/*Especifics stypes for Garden Page*/
+
+.banner {
+    margin: auto;
+    background-color: #C9D79C;
+    width: 100%;
+}
+
+
+#shop-section {
+    width: 90%;
+    margin: auto;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh;
+
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+/* 
+.container-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+}
+
+.item-name, .item-price {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.item-description {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+} */
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #5F6C37;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    width: 60%;
+    margin-left: 60vh;
+    align-items:flex-end;
+    justify-content: flex-end;
+    text-align: end;
+
+}
+
+.contacttext {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #5F6C37;
+}
+
+.text {
+    margin: auto;
+    width: 80%;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.backgroundblob {
+    background-image: url(../assets/Shop-Garden/Blob.svg);
+    background-repeat: no-repeat;
+    margin-top: 15vh;
+}
+
+.imgbox {
+    display: inline-block;
+    position: relative;
+    border: 1px solid red;
+}
+
+.imgbox p {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    right: 16px;
+    font-size: 20px;
+    color: black;
+    background-color:#C9D79C;
+    padding: 2vh 4vh;
+}
