@@ -40,31 +40,45 @@
     color: #5F6C37;
  }
  
+ .buttonbox {
+   padding: 2vh 5vh 15vh 0;
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin-left: 85vh;
+   align-items:flex-end;
+   justify-content: flex-end;
+   text-align: end;
+ }
  
  .textbox {
     font-family: 'Abril Fatface', cursive;
     display: flex;
     flex-direction: column;
-    padding: 5vh;
-    width: 60%;
-    margin-left: 60vh;
+    padding: 2vh 5vh 5vh 0;
+    width: 50%;
+    margin-left: 85vh;
     align-items:flex-end;
     justify-content: flex-end;
     text-align: end;
- 
- 
  }
  
  
  .contacttext {
-    font-family: 'Abril Fatface', cursive;
     font-size: 40px;
     color: #5F6C37;
  }
+
+ .contacttext2 {
+   font-family: 'Quicksand', sans-serif;
+   margin-top: 2vh;
+   font-size: 30px;
+   color: #656565;
+}
  
  
  .text {
-    font-family: 'Abril Fatface', cursive;
+   font-family: 'Quicksand', sans-serif;
     margin: auto;
     width: 80%;
     align-items:flex-end;
@@ -117,3 +131,11 @@
     color: white;
  }
  
+ .banner {
+   font-family: 'Abril Fatface', cursive;
+   color: #636363;
+   background-color: #C6D794;
+   text-align: center;
+   padding: 15vh;
+   font-size: 10vh;
+}
