@@ -12,7 +12,10 @@
     flex-wrap: wrap;
     }
 
-.column {flex-basis: 33%;    
+.column {flex-basis: 33%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
 }
 
 .column a {width: 100%;
@@ -35,5 +38,9 @@
 .rowbanner {display: flex;
     flex-wrap: wrap; }
 
-.columnbanner {flex-basis: 40%;    
+.columnbanner {flex-basis: 40%; 
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 10vh;  
 }
