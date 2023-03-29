@@ -89,7 +89,7 @@
 }
 
 .morebutton {
-    border-radius: 10%;
+    border-radius: 15px;
     border: 3px solid white;
     padding: 2vh 4vh;
     color: white;
@@ -100,5 +100,14 @@
 }
 
 .morebutton:hover {
-    color:#C9D79C;
+    background-color: #C9D79C;
+}
+
+.banner {
+    font-family: 'Abril Fatface', cursive;
+    color: #636363;
+    background-color: #C6D794;
+    text-align: center;
+    padding: 8vh;
+    font-size: 10vh;
 }
