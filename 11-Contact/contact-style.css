@@ -5,8 +5,8 @@
 body{background-image: url(../11-Contact/Assets/Blob.png);
     background-repeat: no-repeat;
     background-size:cover;
-    z-index: -1;
     }
+
 
 label{padding: 4px;
     font-family:'Quicksand', sans-serif;
@@ -36,3 +36,9 @@ padding-bottom: 40px;
             margin-top: 5vh;
             margin-bottom: 5vh;
             }
+
+.map{position: relative;
+float: right;
+margin-right: 15vh;
+margin-top: 4vh;}
+

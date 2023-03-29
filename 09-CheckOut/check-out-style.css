@@ -1,1 +1,71 @@
 /*Especifics stypes for Home Page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{background-image: url(../11-Contact/Assets/Blob.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+
+.grid-container{display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:50px;
+    grid-row-gap:70px;
+    padding-top: 70px;
+    padding-left: 150px;
+    padding-right: 50px;
+    text-align: center;}
+
+.grid-container img{width:100%;
+        height: 100%;}
+
+.car01{grid-column: 1/3;
+    grid-row: 1/2;}
+
+.car02{grid-column: 1/3;
+        grid-row: 2/3;
+        margin-bottom: 10vh;}
+
+.Check-out{width:25%;
+        position: relative;
+        float:right;
+        background-color: aliceblue;
+        height:50vh;
+        border-radius: 5%;
+        margin-right: 10vh;
+        margin-top: -80vh
+}
+
+.text{display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom:3vh;
+    padding: 30px;}
+
+.title01{font-family: 'Quicksand', sans-serif;
+    font-size: 170%;
+    font-weight: 900;
+    margin-bottom: 2vh;}
+
+.title02{font-family: 'Quicksand', sans-serif;
+        font-size: 170%;
+        font-weight: 900;
+        margin-bottom: 2vh;
+        margin-top: 2vh;}
+
+.text01 {font-family: 'Quicksand', sans-serif;
+    font-size: 120%;
+        padding: 10px;
+        text-decoration:underline;}
+
+
+.btn{background-color: #424B25;
+            color: white;
+            font-family:'Quicksand', sans-serif;
+            font-size: 130%;
+            padding: 7px;
+            margin-top: 40px;
+            border: none;}
+            
+.btn:hover{background-color: #424b2554}
