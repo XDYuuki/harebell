@@ -16,26 +16,26 @@ body {
     /* background-attachment: fixed; */
 }
 
-.our-story{
+.our-concept{
     display: flex;
     justify-content: space-between;
 }
 
-.our-story-text {
+.our-concept-text {
     display: flex;
     flex-direction: column;
     margin-left: 135px;
     margin-top: 200px;
 }
 
-.our-story-text p {
+.our-concept-text p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 16pt;
     color: #363D1E;
 }
 
-.our-story-text p:first-child {
+.our-concept-text p:first-child {
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
     color: #636363;
@@ -116,4 +116,392 @@ body {
 
 .icon-baner:hover p {
     color: white;
+}
+
+.blob-flowers {
+   
+    background-image: url(../assets/blobFLowers.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 1000px;
+    flex-direction: column;
+   
+}
+.text-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30%;
+}
+
+.text-content h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50pt;
+    line-height: 107.9%;
+    color: #5F6C37;
+    }
+
+.text-content p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16pt;
+    line-height: 180%;
+    color: #5F6C37;
+    margin-bottom: 10%;
+}
+
+.button-explore {
+    border: 2px solid #5F6C37;
+    border-radius: 8px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.9%;
+    color: #5F6C37;
+    width: 274px;
+    height: 40px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-sellers-banner {
+    display: inline-flex;
+    align-items: center;
+    flex-direction:row;
+    width: 100vw;
+    justify-content: space-evenly;
+    background: #F1F1F1;
+    padding: 100px 0 100px 0;
+}
+
+.best-sellers-banner h2 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 97.9%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.best-sellers-banner h3 {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.best-sellers-banner p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: lowercase;
+
+    color: #000000;
+}
+
+.show-now-best-seller {
+    background: #363D1E;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: white;
+    height: 40px;
+    width: 173px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 46px;
+   
+}
+
+.best-sellers-price{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.button-cart {
+    width: 200px;
+    height: 40px;
+    background: #5F6C37;
+    border-radius: 8px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#price1, #price2 {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 5%;
+}
+
+.decoration-collection {
+    display: inline-flex;
+    align-items: center;
+    flex-direction:row;
+    width: 100vw;
+    /* margin: 10px 10px 10px 10px;     */
+}
+.decoration-collection img {
+    margin-top: 2px;
+}
+
+.decoration-collection-text {
+    margin: 10px 0px 10px 50px;
+    width: 1150px;
+    height: 482px;
+    background-color: #5F6C37;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.decoration-collection-text h2{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+}
+
+.decoration-collection-text a {
+    margin-left: 100px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.9%;
+}
+
+.blog {
+    height: 895px;
+    background-color: #C6D794;
+}
+
+.blog-banner {
+    width: 100%;
+    /* height: 885px; */
+    left: 1px;
+    /* top: 1738px; */
+    background-color: #CCDB99;
+   display: flex;
+   text-align: center;
+}
+
+.blog-banner-title {
+    width: 100%;
+    background-color: #CCDB99;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    color: #5B5B5B;
+}
+
+.blog-banner-title {
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 97.9%;
+    letter-spacing: 0.01em;
+    color: #5B5B5B;
+    
+}
+
+.post {
+   width: 371px;
+   border-radius: 10px;
+   background-color: white;
+   align-items: center;
+   margin-left: 11%;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.post p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242914;
+}
+
+.post-text {
+    padding: 5px 5px 5px 5px;
+}
+
+.post-title {
+    font-family: 'Old Standard TT', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #5F6C37;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #CCDB99;
+
+   
+}
+
+.post-description {
+    display:inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #242914;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.see-all-button {
+    background-color: #CCDB99;
+justify-content: center;
+display: flex;
+text-align: center;
+align-items: center;
+width: 100%;
+
+}
+.see-all-button a {
+    margin-bottom: 5%;
+    border: 2px solid #646464;
+    border-radius: 8px;
+    background-color: #CCDB99;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 10%;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #767676;
+}
+
+.newsletter {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+input {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #767676;
+}
+
+.newsletter h2{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #5F6C37;
+}
+
+.newsletter h3 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #535353;
+}
+
+.newsletter input {
+    box-sizing: border-box;
+    width: 715px;
+    height: 68px;
+    background: #FFFFFF;
+    border: 1px solid #5C5C5C;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter button {
+    border: 2px solid #646464;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #CCDB99;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #767676;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
