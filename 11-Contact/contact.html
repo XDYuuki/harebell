@@ -46,8 +46,8 @@
             <!--Map-->
                 <section class="map">
                     <div class="map01">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.9974994665768!2d-79.35573988450105!3d43.689815379120105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc9417e56fe3%3A0x8c8b92af93a0ef0d!2s20%20Gamble%20Ave%2C%20Toronto%2C%20ON%20M4K%202G9!5e0!3m2!1spt-BR!2sca!4v1680108920619!5m2!1spt-BR!2sca" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.9974994665768!2d-79.35573988450105!3d43.689815379120105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc9417e56fe3%3A0x8c8b92af93a0ef0d!2s20%20Gamble%20Ave%2C%20Toronto%2C%20ON%20M4K%202G9!5e0!3m2!1spt-BR!2sca!4v1680108920619!5m2!1spt-BR!2sca" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </section>
 
                 <!--End Map-->
@@ -57,20 +57,20 @@
                     <div class="row">
                         </div>
                         <div class="col-8">
-                            <form action="mail/process-form.php" method="post">
+                            <form>
                                 <div class="mb-3">
                                         <label for="Name" class="form-label">YOUR NAME</label>
-                                        <input type="text" class="form-control"  placeholder="Your name" name="Name">
+                                        <input type="text" class="form-control"  placeholder="Your name" name="Name" id="form-name">
                                       </div>
             
                                 <div class="mb-3">
                                     <label for="Email" class="form-label">EMAIL ADRESS</label>
-                                    <input type="email" class="form-control"  placeholder="Your email address" name="Email">
+                                    <input type="email" class="form-control"  placeholder="Your email address" name="Email" id="form-email">
                                   </div>
             
                                   <div class="mb-3">
                                     <label for="Message" class="form-label">MESSAGE</label>
-                                    <textarea class="form-control"  rows="6" name="Message"></textarea>
+                                    <textarea class="form-control"  rows="6" name="Message" id="form-message"></textarea>
                                   </div>
             
                                   <div class="d-grid gap-2">
@@ -145,4 +145,7 @@
             </footer>
         </div>
     </body>
+    <script src="envVar.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="contact.js"></script>
 </html>
