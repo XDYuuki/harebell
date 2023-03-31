@@ -1,7 +1,5 @@
 var contactForm = document.querySelector("form");
 
-//window.localStorage.setItem("key", "value");
-
 contactForm.addEventListener("submit", (event) => {
     let destnyEmail = document.getElementById("form-email");
     let from = document.getElementById("form-name");
@@ -18,7 +16,7 @@ function sendMail(name, email, messageContent) {
     <h3>Dear ${name},</h3>
     <p>This is your contact message: </p>
     <p>${messageContent}</p>
-    <p><strong>Harebell</strong> thank you for your contact!!!</p>`;
+    <p><strong>Harebell</strong> thanks you for the contact!!!</p>`;
 
     Email.send({
         Host: "smtp.elasticemail.com",

@@ -43,29 +43,26 @@
             </header>
 
             <main>
-                <section class="grid-container">
-                        <!-- Start column-->
-                        <div class="car01" aria-label="Column cotainer">
-                            <img src="Assets/Product summary for Cart & Check-out (1).png" alt= "product in a car">
+                <div class="main-container">
+                    <section class="grid-container">
+                        <div class="cart-item" aria-label="Column cotainer" id="cart-item">
+                            <!-- javascript will insert itens here -->
                         </div>
-                        <div class="car02" aria-label="Column cotainer">
-                            <img src="Assets/Product summary for Cart & Check-out.png" alt="product in a car">
-                        </div>
+    
                     </section>
                     <section class="Check-out">
                         <div class="text">
-                        <p class="title01">Order Summary</p>
-                        <p class="text01">Subtotal $45</p>
-                        <p class="text01">Shipping Estimate $00</p>
-                        <p class="text01">Tax Estimate $00</p>
-                        <p class="title02">Order Total $45</p>
+                            <p class="title01">Order Summary</p>
+                            <p class="text01">Subtotal $45</p>
+                            <p class="text01">Shipping Estimate $00</p>
+                            <p class="text01">Tax Estimate $00</p>
+                            <p class="title02">Order Total $45</p>
+                        </div>
                         <button class="btn btn-primary" type="submit">CHECK OUT</button>
-
-                    </div>
-                      </div>
                     </section>
+                </div>
             </main>
-
+            
             <footer>
                 <div class="footer1">
                     <p>
@@ -115,4 +112,6 @@
             </footer>
         </div>
     </body>
+    <script src="../utils/addToCart.js"></script>
+    <script src="checkOut.js"></script>
 </html>
