@@ -2,46 +2,131 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-body{background-image: url(../11-Contact/Assets/Blob.png);
+body{
+    background-image: url(../11-Contact/Assets/Blob.svg);
     background-repeat: no-repeat;
     background-size:cover;
-    }
+    background-position: right top;
+    background-size: 60%;
+}
 
-.grid-container{display: grid;
+.main-container {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 70vh; */
+}
+
+.grid-container{
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap:50px;
-    grid-row-gap:70px;
+    grid-row-gap:70px; */
+    display: inline-flex;
     padding-top: 70px;
     padding-left: 150px;
     padding-right: 50px;
-    text-align: center;}
+    text-align: center;
+}
 
-.grid-container img{width:100%;
-        height: 100%;}
+.grid-container img:first-child{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
 
-.car01{grid-column: 1/3;
-    grid-row: 1/2;}
+.text-product {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: #64748B;
+    margin-left: 3.5vw;
+}
 
-.car02{grid-column: 1/3;
-        grid-row: 2/3;
-        margin-bottom: 10vh;}
+.semi-600-20{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+    color: black;
+}
 
-.Check-out{width:25%;
-        position: relative;
-        float:right;
-        background-color: aliceblue;
-        height:50vh;
-        border-radius: 5%;
-        margin-right: 10vh;
-        margin-top: -80vh
+.in-stock{
+    display: inline-flex;
+}
+.in-stock img:first-child {
+    width: 20px;
+    height: 20px;
+}
+
+.product-qt {
+    display: inline-flex;
+    margin-left: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-qt p {
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: black;
+    margin-right: 1.5vw;
+}
+
+select {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-item{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.product-item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+
+.Check-out{
+
+    /* margin-top: -80vh */
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .text{display: flex;
     flex-direction: column;
     margin-top: 5vh;
     margin-bottom:3vh;
-    padding: 30px;}
+    padding: 30px;
+
+    width:20vw;
+    /* position: relative;
+    float:right; */
+    background-color: aliceblue;
+    height:50vh;
+    border-radius: 5%;
+    margin-right: 10vh;
+    text-align: center;
+    justify-content: center;
+}
 
 .title01{font-family: 'Quicksand', sans-serif;
     font-size: 170%;
@@ -60,12 +145,15 @@ body{background-image: url(../11-Contact/Assets/Blob.png);
         text-decoration:underline;}
 
 
-.btn{background-color: #424B25;
-            color: white;
-            font-family:'Quicksand', sans-serif;
-            font-size: 130%;
-            padding: 7px;
-            margin-top: 40px;
-            border: none;}
+.btn{
+    background-color: #424B25;
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    font-size: 130%;
+    padding: 7px;
+    margin-top: 5px;
+    border: none;
+    width: 20vw;
+}
             
 .btn:hover{background-color: #424b2554}
