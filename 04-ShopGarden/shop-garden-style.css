@@ -1,141 +1,65 @@
 /*Especifics stypes for Garden Page*/
 
+:root {
+   --darkgreen: #5F6C37;
+   --lightgreen: #C9D79C;
+   --darkgrey: #656565;
+   --headergrey: #636363;
+   --font1: 'Abril Fatface', cursive;
+   --font2: 'Quicksand', sans-serif;
+}
 
 .banner {
-    margin: auto;
-    background-color: #C9D79C;
-    width: 100%;
- }
- 
- 
- 
- 
- #shop-section {
-    width: 90%;
-    margin: auto;
- }
- 
- 
- .rows {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 5vh;
- 
- 
- }
- 
- 
- .items {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
- }
- 
- 
- h3 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 40px;
-    text-align: center;
-    color: #5F6C37;
- }
- 
- .buttonbox {
-   padding: 2vh 5vh 15vh 0;
+   font-family: var(--font1);
+   background-color: var(--lightgreen);
+   color: var(--headergrey);
+   height: 30vh;
    display: flex;
-   flex-direction: column;
-   width: 50%;
-   margin-left: 85vh;
-   align-items:flex-end;
-   justify-content: flex-end;
-   text-align: end;
- }
- 
- .textbox {
-    font-family: 'Abril Fatface', cursive;
-    display: flex;
-    flex-direction: column;
-    padding: 2vh 5vh 5vh 0;
-    width: 50%;
-    margin-left: 85vh;
-    align-items:flex-end;
-    justify-content: flex-end;
-    text-align: end;
- }
- 
- 
- .contacttext {
-    font-size: 40px;
-    color: #5F6C37;
- }
+   align-items: center;
+   justify-content: center;
+}
 
- .contacttext2 {
-   font-family: 'Quicksand', sans-serif;
-   margin-top: 2vh;
-   font-size: 30px;
-   color: #656565;
+
+.backgroundblob {
+   background-image: url(../assets/Shop-Garden/Blob.svg);
+   background-repeat: no-repeat;
+   margin-top: 15vh;
+   height: 130vh;
 }
- 
- 
- .text {
-   font-family: 'Quicksand', sans-serif;
-    margin: auto;
-    width: 80%;
-    align-items:flex-end;
-    justify-content: flex-end;
- }
- 
- 
- .backgroundblob {
-    background-image: url(../assets/Shop-Garden/Blob.svg);
-    background-repeat: no-repeat;
-    margin-top: 15vh;
- }
- 
- 
- .imgbox {
-    display: inline-block;
-    position: relative;
- }
- 
- 
- .imgbox p {
-    position: absolute;
-    font-family: 'Quicksand', sans-serif;
-    right: 16px;
-    font-size: 20px;
-    color: black;
-    background-color:#C9D79C;
-    padding: 2vh 4vh;
- }
- 
- 
- .imghover:hover {
-    opacity: 0.6;
- }
- 
- 
- .contact-button {
-    font-family: 'Quicksand', sans-serif;
-    font-size:2vh;
-    border: 2px solid #5F6C37;
-    border-radius: 20px;
-    padding: 2vh 4vh;
-    color: #5F6C37;
-    font-weight: bold;
- }
- 
- 
- .contact-button:hover {
-    background-color: #5F6C37;
-    color: white;
- }
- 
- .banner {
-   font-family: 'Abril Fatface', cursive;
-   color: #636363;
-   background-color: #C6D794;
-   text-align: center;
-   padding: 15vh;
-   font-size: 10vh;
+
+.title {
+   font-family: var(--font1);
+   color: var(--darkgreen);
 }
+
+.contact-button {
+   font-family: 'Quicksand', sans-serif;
+   font-size:2vh;
+   border: 2px solid #5F6C37;
+   border-radius: 15px;
+   padding: 2vh 3vh;
+   color: #5F6C37;
+   font-weight: bold;
+   margin: 4vh 0;
+}
+
+.wrapper {
+   width: 50%;
+   text-align: end;
+}
+
+
+.items-end {
+   width: 91%;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+}
+
+img:hover {
+   opacity: 0.6;
+}
+
+ 
+
+ 
