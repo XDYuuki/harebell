@@ -1,55 +1,29 @@
 /*Especifics stypes for Garden-vegetables Page*/
 
-.banner {
-    margin: auto;
-    background-color: #C9D79C;
-    width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:wght@400;600&family=Quicksand&display=swap');
 
 
-#shop-section {
-    width: 90%;
-    margin: auto;
-}
-
-.rows {
+:root {
+    --darkgreen: #5F6C37;
+    --lightgreen: #C9D79C;
+    --darkgrey: #656565;
+    --headergrey: #636363;
+    --font1: 'Abril Fatface', cursive;
+    --font2: 'Quicksand', sans-serif;
+    --font3: 'Noto Sans', sans-serif;
+ }
+ 
+ .banner {
+    font-family: var(--font1);
+    background-color: var(--lightgreen);
+    color: var(--headergrey);
+    height: 30vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 5vh;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 5px gray;
-    border-radius: 5%;
-}
-
-.container-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.product-description {
-    display: flex;
-    flex-direction: column;
-    padding: 3vh;
-}
-
-.shop-cart {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 5vh;
+    justify-content: center;
  }
 
- .shop-cart:hover {
- opacity: 0.3;
- }
-
-.item-name, .item-price {
+ .item-name, .item-price {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 600;
     font-weight: bold;
@@ -59,6 +33,19 @@
 .item-description {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5%;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .more { 
@@ -101,13 +88,4 @@
 
 .morebutton:hover {
     background-color: #C9D79C;
-}
-
-.banner {
-    font-family: 'Abril Fatface', cursive;
-    color: #636363;
-    background-color: #C6D794;
-    text-align: center;
-    padding: 8vh;
-    font-size: 10vh;
 }

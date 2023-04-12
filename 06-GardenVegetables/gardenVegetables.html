@@ -1,138 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="../reset.css">
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="stylesheet" href="../06-GardenVegetables/garden-vegetables-style.css">
+              <!--Bootstrap-->
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+                <!--Stylesheets-->
+                <link rel="stylesheet" href="../reset.css">
+                <link rel="stylesheet" href="../styles.css">
+                <link rel="stylesheet" href="../06-GardenVegetables/garden-vegetables-style.css">
 
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+       
+               <!--Google Fonts-->
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+               <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:wght@400;600&family=Quicksand&display=swap" rel="stylesheet">
+               
+        <title>Harebell</title>
+   </head>
+   <body>
+       <div>
 
-                <title>Harebell</title>
-    </head>
-    <body>
-        <div>
-            <header>
-                <img src="../assets/HarebellLogo.svg" alt="Harebell-Logo" id="harebell-logo">
-                <div class="header-links">
-                    <div class="link-menu">
-                        <a href="../01-Home/home.html">HOME</a>
-                        <a href="../02-AboutUs/aboutUs.html">ABOUT US</a>
-                        <span>
-                            <a href="#">
-                                SHOP
-                                <img src="../assets/shopArrowDown.svg" alt="arrow-down">
-                            </a>
-                        </span>
-                        <a href="../10-Blog/blog.html">BLOG</a>
-                        <a href="../11-Contact/contact.html">CONTACT</a>
-                    </div>
-        
-                    <div class="icons-menu">
-                        <a href="#">
-                            <img src="../assets/magnifierIcon.svg" alt="magnifierIcon">
-                        </a>
-                        <a href="../09-CheckOut/checkOut.html">
-                            <img src="../assets/cartIcon.svg" alt="cartIcon">
-                        </a>
-                    </div>
-                </div>
-            </header>
+                   <!--Header-->
+           <header>
+               <img src="../assets/HarebellLogo.svg" alt="Harebell-Logo" id="harebell-logo">
+               <div class="header-links">
+                   <div class="link-menu">
+                       <a href="../01-Home/home.html">HOME</a>
+                       <a href="../02-AboutUs/aboutUs.html">ABOUT US</a>
+                       <span>
+                           <a href="#">
+                               SHOP
+                               <img src="../assets/shopArrowDown.svg" alt="arrow-down">
+                           </a>
+                       </span>
+                       <a href="../10-Blog/blog.html">BLOG</a>
+                       <a href="../11-Contact/contact.html">CONTACT</a>
+                   </div>
+      
+                   <div class="icons-menu">
+                       <a href="#">
+                           <img src="../assets/magnifierIcon.svg" alt="magnifierIcon">
+                       </a>
+                       <a href="../09-CheckOut/checkOut.html">
+                           <img src="../assets/cartIcon.svg" alt="cartIcon">
+                       </a>
+                   </div>
+               </div>
+           </header>
 
-            <!--BANNER-->
-            <section class="container-fluid banner">
-                
-                <p>Vegetables</p>
+          <!--Banner-->
+          <section class="container-fluid banner">
+            <h1 class="align-middle display-3 text-center">Vegetables</h1>
+          </section>
 
-            </section>
+        <!--Shop Section-->
 
+         <!--Start row 1-->
+          <div class="container text-center">
+            <div class="row">
+              <div class="col p-4">
 
-            <section id="shop-section">
+                <!--Column 1 start-->
+                <div class="grid text-center items" style="--bs-columns: 3;">
+                    <img src="../assets/Garden-vegetables/1.jpg" alt="Plant image">
 
-                <!-- Start row 1 -->
-                <div class="rows">
+                    <div class="row">
 
-                
-                <div class="items">
-
-                    <img src="../assets/Garden-vegetables/1.jpg" alt="Vegetable image">
-
-                    <div class="container-wrap">
-                      
-                        <div class="product-description">
-                            <p class="item-name">Vegetable 1</p>
-                            <p class="item-description">description</p>
-                            <p class="item-price">$20</p>
+                        <div class="col p-3" id="item1">
+                            <div class="item-name">Vegetable 1</div>
+                            <div class="item-description">description</div>
+                            <div class="item-price">$000</div>
                         </div>
 
-                        <div class="shop-cart">
-                            <button type="button" class="btn btn-success">
+                        <div class="col items-center">
+                            <button type="button" class="btn btn-success" onclick="addToTheCart(item1, 1)">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-                </svg>
-                              </button>
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                </svg>
+                            </button>
                         </div>
-                </div>
+                      </div>
 
-                </div>
+                  </div>
+                <!--Column end-->
 
-                <div class="items">
-                    <img src="../assets/Garden-plants/2.jpg" alt="Vegetable image">
+              </div>
+              <div class="col p-4">
 
-                    <div class="container-wrap">
-                      
-                        <div class="product-description">
-                            <p class="item-name">Vegetable 2</p>
-                            <p class="item-description">description</p>
-                            <p class="item-price">$10</p>
+                <!--Column 2 start-->
+                <div class="grid text-center items" style="--bs-columns: 3;">
+                    <img src="../assets/Garden-vegetables/2.jpg" alt="Plant image">
+
+                    <div class="row">
+
+                        <div class="col p-3" id="item2">
+                            <div class="item-name">Vegetable 2</div>
+                            <div class="item-description">description</div>
+                            <div class="item-price">$000</div>
                         </div>
 
-                        <div class="shop-cart">
-                            <button type="button" class="btn btn-success">
+                        <div class="col items-center">
+                            <button type="button" class="btn btn-success" onclick="addToTheCart(item2, 2)">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-                </svg>
-                              </button>
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                </svg>
+                            </button>
                         </div>
-                </div>
+                      </div>
 
-                </div>
-                <div class="items">
-                    <img src="../assets/Garden-vegetables/3.jpeg" alt="Vegetable image">
+                  </div>
+                <!--Column end-->
 
-                    <div class="container-wrap">
-                      
-                        <div class="product-description">
-                            <p class="item-name">Vegetable 3</p>
-                            <p class="item-description">description</p>
-                            <p class="item-price">$8</p>
+              </div>
+              <div class="col p-4">
+
+                <!--Column 3 start-->
+                <div class="grid text-center items" style="--bs-columns: 3;">
+                    <img src="../assets/Garden-vegetables/3.jpeg" alt="Plant image">
+
+                    <div class="row">
+
+                        <div class="col p-3" id="item3">
+                            <div class="item-name">Vegetable 3</div>
+                            <div class="item-description">description</div>
+                            <div class="item-price">$000</div>
                         </div>
 
-                        <div class="shop-cart">
-                            <button type="button" class="btn btn-success">
+                        <div class="col items-center">
+                            <button type="button" class="btn btn-success" onclick="addToTheCart(item3, 3)">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
-                </svg>
-                              </button>
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                </svg>
+                            </button>
                         </div>
-                </div>
+                      </div>
 
-                </div>
+                  </div>
+                <!--Column end-->
+
+              </div>
             </div>
-            <!-- End row 1 -->
-            </section>
+          </div>
+        <!--End row 1-->
 
-            <!-- Start banner section -->
+
             <section class="more">
                 <div class="leftside">
                     <p class="moretext">Learn how to care for your vegetables</p>
