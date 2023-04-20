@@ -11,69 +11,36 @@
 ---------------------------------------------------*/
 
 header {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
+    margin: 3vh;
 }
 
-.header-links {
-    display: flex;
-    margin-right: 27px;
-    color: black;
-}
-
-.link-menu {
-    font-family: 'Quicksand', sans-serif;
+.header-text {
+    font-family: var(--font2);
+    font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    margin-top: 135px;
-    margin-left: 294px;
-    margin-right: 59px;
+    font-size: 1.3em;
+    text-transform: uppercase;
 }
-
-.link-menu a {
-    margin: 0 0 0 15px;
-}
-.link-menu span a{
-    margin-left: 15px;
-    margin-right: 0px;
-}
-
 
 #harebell-logo {
-    margin-top: 115px;
-    margin-left: 20px;
+    width: 30vh;
 }
 
-.icons-menu {
-    margin-top: 131px;
-    justify-content: right;
+.icon-menu {
+    width: 8vh;
+    padding-left: 15px;
 }
 
-.icons-menu img:first-child {
-    margin-right: 27px;
-}
+/* FOOTER
+---------------------------------------------------*/
 
-p {
-    display:inline;
- 
-}
-li {
-    margin: 10px 0;
-  
-}
-
-ul {
-writing-mode: horizontal-tb;
-text-align: left;
-
-}
 
 .footer table {
     height: 200px;
     text-align: left;
    
 }
+
 footer {
     width: 100vw;
     font-family: 'Quicksand', sans-serif;

@@ -4,41 +4,82 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!--Stylesheets-->
         <link rel="stylesheet" href="../reset.css">
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="./home-style.css">
+
         <title>Harebell</title>
     </head>
     <body>
         <div>
 
-            <header>
-                <img src="../assets/HarebellLogo.svg" alt="Harebell-Logo" id="harebell-logo">
-                <div class="header-links">
-                    <div class="link-menu">
-                        <a href="#">HOME</a>
-                        <a href="../02-AboutUs/aboutUs.html">ABOUT US</a>
-                        <span>
-                            <a href="#">
-                                SHOP
-                                <img src="../assets/shopArrowDown.svg" alt="arrow-down">
-                            </a>
-                        </span>
-                        <a href="../10-Blog/blog.html">BLOG</a>
-                        <a href="../11-Contact/contact.html">CONTACT</a>
-                    </div>
-        
-                    <div class="icons-menu">
-                        <a href="#">
-                            <img src="../assets/magnifierIcon.svg" alt="magnifierIcon">
-                        </a>
-                        <a href="../09-CheckOut/checkOut.html">
-                            <img src="../assets/cartIcon.svg" alt="cartIcon">
-                        </a>
-                    </div>
-                </div>
-            </header>
+            
+<!-- Header Start -->
+<header class="container-fluid header-text">
+
+    <!-- Nav Logo -->
+    <div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/HarebellLogo.svg" id="harebell-logo">
+    </a>
+  </div>
+
+  <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../01-Home/home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../02-AboutUs/aboutUs.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../04-ShopGarden/shopGarden.html">Garden</a></li>
+            <li><a class="dropdown-item" href="../05-GardenPlants/gardenPlants.html">Plants</a></li>
+            <li><a class="dropdown-item" href="../06-GardenVegetables/gardenVegetables.html">Vegetables</a></li>
+            <li><a class="dropdown-item" href="../03-ShopDecorations/shopDecorations.html">Decorations</a></li>
+            <li><a class="dropdown-item" href="../07-GardenSupliesAndTools/gardenSupliesAndTools.html">Suplies and Tools</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../10-Blog/blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../11-Contact/contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="../assets/magnifierIcon.svg" class="icon-menu">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="../assets/cartIcon.svg" class="icon-menu">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+
+
             <main>
+
+                        <!-- Our Concept -->
                 <div class="our-concept">
                     <div class="our-concept-text">
                         <p>our concept</p>
@@ -53,6 +94,9 @@
                         <img src="../assets/Succulents.svg" alt="suculents image">
                     </div>
                 </div>
+
+
+                         <!-- Categories -->
                 <div class="icons-square-banners">
                     <a href="../08-Acessories/acessories.html">
                         <div class="icon-baner">
@@ -83,14 +127,58 @@
                         </div>
                     </a>
                 </div>
-                <div class="blob-flowers">
-                    <div class="text-content">
-                        <h2>the garden collection</h2>
-                        <p> To care, in addition to all the love and affection, we need the right tools!</p>
-                        <a href="../04-ShopGarden/shopGarden.html"> 
-                            <div class="button-explore">Explore the collection </div></a>
-                    </div>
-                </div>
+
+                        <!-- The Garden Collection -->
+
+
+                        <div class="container text-center carousel-container">
+                            <div class="row">
+                              <div class="col">
+
+                                <!-- Carousel Start -->
+                                <div id="carouselExampleIndicators" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="../assets/home/img1.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../assets/home/img2.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../assets/home/img3.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../assets/home/img4.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                  <!-- Carousel End -->
+                            
+                              </div>
+                              <div class="col text-content">
+                                <h2>the garden collection</h2>
+                                <p> To care, in addition to all the love and affection, we need the right tools!</p>
+                                <a href="../04-ShopGarden/shopGarden.html"> 
+                                    <div class="button-explore">Explore the collection </div></a>
+                            </div>
+                              </div>
+                            </div>
+                            </div>
+
+                        <!-- Best Sellers -->
                 <div class="best-sellers-banner">
                     <div class="best-seller-coluna1">
                         <h2> Bestsellers</h2>
@@ -120,6 +208,8 @@
                     </div>
             
                 </div>
+
+                        <!-- Decoration section -->
                 <div class="decoration-collection">
                     <div class="decoration-collection-text">
                         <h2> Our decoration collection will <br> delight you </h2>
@@ -129,53 +219,61 @@
                         <img src="../assets/Garden-vegetables/bench.jpeg">
                     </div>
                 </div>
-                <div class="blog-banner-title">
-                    <h2> Blog </h2>
-                </div>
-                <div class="blog-banner">
-                  
-                    <div class="post">
-                         <img src="../10-Blog/Assets/img1.png">
-                         <div class="post-text">
-                            <h4 class="post-title">
-                                <a href="https://www.healthline.com/health/garden-helps-my-anxiety">
-                                How gardening Can help with anxiety
-                                </a>
-                            </h4>
-                            <p>Incorporating gardening into your routine can help you live a lighter life.</p>
-                        </div>
-                    </div>
-                 
-                    <div class="post">
-                            <img src="../10-Blog/Assets/img2.png">
-                            <div class="post-text">
-                                <h4 class="post-title">
-                                    <a href="https://www.ecobee.com/en-us/citizen/how-to-create-the-perfect-environment-for-your-plants/">
+
+                        <!-- Blog -->
+
+                        <section class="blog-section">
+                        <h2 class="blog-title"> Blog </h2>
+                        <div class="container text-center">
+                            <div class="row align-items-center">
+                              <div class="col">
+                                <div class="card" style="width: 25rem;">
+                                    <img src="../10-Blog/Assets/img1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">
+                                        How gardening Can help with anxiety
+                                      </h5>
+                                      <p class="card-text">
+                                        Incorporating gardening into your routine can help you live a lighter life.
+                                        </p>
+                                      <a href="https://www.healthline.com/health/garden-helps-my-anxiety" class="btn btn-success">See more</a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" style="width: 25rem;">
+                                    <img src="../10-Blog/Assets/img2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">
                                         How to create amazing environments with plants
-                                    </a>
-                                </h4>
-                                <p>Plants and ornaments can be a great ally in decorating environments.</p>
-                            </div>
-                    </div>
-                    <div class="post">
-                            <img src="../10-Blog/Assets/img3.png">
-                            <div class="post-text">
-                                <h4 class="post-title">
-                                    <a href="https://www.geturbanleaf.com/blogs/why/plants-can-help-you-relax">
+                                    </h5>
+                                      <p class="card-text">
+                                        Plants and ornaments can be a great ally in decorating environments.
+                                    </p>
+                                      <a href="ttps://www.ecobee.com/en-us/citizen/how-to-create-the-perfect-environment-for-your-plants/" class="btn btn-success">See more</a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" style="width: 25rem;">
+                                    <img src="../10-Blog/Assets/img3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">
                                         How creating plants' environments can help you relax
-                                </a>
-                                </h4>
-                                <p>Contact with nature helps to have a better quality of life, such as creating simple environments to be used in everyday life.</p>
+                                    </h5>
+                                      <p class="card-text">
+                                        Contact with nature helps to have a better quality of life, such as creating simple environments to be used in everyday life.
+                                    </p>
+                                      <a href="https://www.geturbanleaf.com/blogs/why/plants-can-help-you-relax" class="btn btn-success">See more</a>
+                                    </div>
+                                  </div>
+                              </div>
                             </div>
-                    </div>
-                    
-                </div>
-                <div class="see-all-button">
-                    <a href="../10-Blog/blog.html"> See all </a>
-                </div>
-            
-                 </div>
-                
+                          </div>
+                        </section>
+
+    
+                         <!-- Newsletter -->
                 <div class="newsletter">
                     <h2> Newsletter</h2>
                     <h3> Sign up here to receive our latest updates <br>
@@ -184,8 +282,12 @@
                         <button type="submit"> Sign up </button>
                     </form>
                 </div>
+
+                
             </main>
             
+
+                    <!-- Footer -->
             <footer>
                 <div class="footer1">
                     <p>

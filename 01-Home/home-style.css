@@ -1,3 +1,4 @@
+/*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
@@ -5,15 +6,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
 
+/* Basic resets */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+}
 
 
-/*Especifics stypes for Home Page*/
+/*Especifics styles for Home Page*/
+
+:root {
+    --darkgreen: #5F6C37;
+    --lightgreen: #C9D79C;
+    --darkgrey: #656565;
+    --headergrey: #636363;
+    --font1: 'Abril Fatface', cursive;
+    --font2: 'Quicksand', sans-serif;
+    --font3: 'Noto Sans', sans-serif;
+    --font4: 'Old Standard TT', serif;
+ }
+ 
 
 body {
     background-image: url(../assets/blobBanner.svg);
     background-repeat: no-repeat;
     background-position: right top;
     /* background-attachment: fixed; */
+}
+
+.border {
+    border: solid red 2px;
 }
 
 .our-concept{
@@ -118,7 +148,22 @@ body {
     color: white;
 }
 
-.blob-flowers {
+/* carousel section */
+
+#carousel-section {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.carousel-container {
+ margin: 10vh;
+}
+
+/* .blob-flowers {
    
     background-image: url(../assets/blobFLowers.svg);
     background-size: cover;
@@ -130,13 +175,12 @@ body {
     height: 1000px;
     flex-direction: column;
    
-}
+} */
 .text-content {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-left: 30%;
 }
 
 .text-content h2 {
@@ -309,128 +353,24 @@ body {
     line-height: 97.9%;
 }
 
-.blog {
-    height: 895px;
+/* Blog Section */
+
+.blog-section {
+    height: 80vh;
     background-color: #C6D794;
-}
-
-.blog-banner {
     width: 100%;
-    /* height: 885px; */
-    left: 1px;
-    /* top: 1738px; */
-    background-color: #CCDB99;
-   display: flex;
-   text-align: center;
+    font-family: var(--font2);
 }
 
-.blog-banner-title {
-    width: 100%;
-    background-color: #CCDB99;
-    display: flex;
+.blog-title { 
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    color: #5B5B5B;
+    font-family: var(--font4);
+    color: var(--darkgreen);
+    font-size: 3.5em;
+    padding: 5vh;
 }
 
-.blog-banner-title {
-    font-family: 'Abril Fatface', cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 97.9%;
-    letter-spacing: 0.01em;
-    color: #5B5B5B;
-    
-}
-
-.post {
-   width: 371px;
-   border-radius: 10px;
-   background-color: white;
-   align-items: center;
-   margin-left: 11%;
-   margin-top: 50px;
-   margin-bottom: 50px;
-}
-
-.post p {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242914;
-}
-
-.post-text {
-    padding: 5px 5px 5px 5px;
-}
-
-.post-title {
-    font-family: 'Old Standard TT', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.01em;
-    text-transform: capitalize;
-    color: #5F6C37;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: #CCDB99;
-
-   
-}
-
-.post-description {
-    display:inline-block;
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #242914;
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
-
-.see-all-button {
-    background-color: #CCDB99;
-justify-content: center;
-display: flex;
-text-align: center;
-align-items: center;
-width: 100%;
-
-}
-.see-all-button a {
-    margin-bottom: 5%;
-    border: 2px solid #646464;
-    border-radius: 8px;
-    background-color: #CCDB99;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 10%;
-    padding: 10px;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #767676;
-}
+/* Newsletter */
 
 .newsletter {
     text-align: center;
