@@ -4,140 +4,187 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!--Stylesheets-->
         <link rel="stylesheet" href="../reset.css">
         <link rel="stylesheet" href="../styles.css">
-        <link rel="stylesheet" href="about-us-style.css">
+        <link rel="stylesheet" href="./about-us-style.css">
+
         <title>Harebell</title>
     </head>
     <body>
         <div>
-            <!-- Header Start -->
-<header class="container-fluid header-text">
 
-    <!-- Nav Logo -->
-    <div>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/HarebellLogo.svg" id="harebell-logo">
-    </a>
-  </div>
+            
+<!-- Header Start -->
+			<header class="container-fluid header-text">
 
-  <!-- Nav Links -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../01-Home/home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../02-AboutUs/aboutUs.html">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Shop
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../04-ShopGarden/shopGarden.html">Garden</a></li>
-            <li><a class="dropdown-item" href="../05-GardenPlants/gardenPlants.html">Plants</a></li>
-            <li><a class="dropdown-item" href="../06-GardenVegetables/gardenVegetables.html">Vegetables</a></li>
-            <li><a class="dropdown-item" href="../03-ShopDecorations/shopDecorations.html">Decorations</a></li>
-            <li><a class="dropdown-item" href="../07-GardenSupliesAndTools/gardenSupliesAndTools.html">Suplies and Tools</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../10-Blog/blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../11-Contact/contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img src="../assets/magnifierIcon.svg" class="icon-menu">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img src="../assets/cartIcon.svg" class="icon-menu">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
+				<div>
+				<!-- Nav Logo -->
+					<nav class="navbar navbar-expand-lg bg-body-tertiary">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">
+								<img src="../assets/HarebellLogo.svg" id="harebell-logo">
+							</a>
+						</div>
+
+					<!-- Nav Links -->
+
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../01-Home/home.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../02-AboutUs/aboutUs.html">About</a>
+								</li>
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
 
 
-            <div class="blob-flowers">
-           <p id="meet-staff-title"> Meet our staff </p>
-            <div class="meet-our-staff" id="Mathias">
-                    <a href="" class="mathias-picture"><img src="..\assets\about-us\Mathias-picture.png" alt="Mathias"></a>
-                    <p class="staff-name" id="Mathias-name"> Mathias</p>
-                        <p class="staff-description"> Passionate about green and sustainable <br> environments, Mathias knows everything <br> about plants and will help you create <br> modern and creative environments.</p>
-            </div>
-            <div class="meet-our-staff" id="Monica">
-                        <a href="" class="monica-picture"><img src="..\assets\about-us\Monica-picture.png" alt="Monica"></a>
-                    <p class="staff-name" id="Monica-name">Monica</p>
-                        <p class="staff-description"> Passionate about colors and flowers,<br> Monica knows everything about flowers <br>and will help you make everything in life <br>more colorful and flowery.</p>
-            </div>
-        </div>
-   
-    <div class="blog-banner-title">
-        <h2> Blog </h2>
-    </div>
-    <div class="blog-banner">
-      
-        <div class="post">
-             <img src="../10-Blog/Assets/img1.png">
-             <div class="post-text">
-                <h4 class="post-title">
-                    <a href="https://www.healthline.com/health/garden-helps-my-anxiety">
-                    How gardening Can help with anxiety
-                    </a>
-                </h4>
-                <p>Incorporating gardening into your routine can help you live a lighter life.</p>
-            </div>
-        </div>
-     
-        <div class="post">
-                <img src="../10-Blog/Assets/img2.png">
-                <div class="post-text">
-                    <h4 class="post-title">
-                        <a href="https://www.ecobee.com/en-us/citizen/how-to-create-the-perfect-environment-for-your-plants/">
-                            How to create amazing environments with plants
-                        </a>
-                    </h4>
-                    <p>Plants and ornaments can be a great ally in decorating environments.</p>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="../04-ShopGarden/shopGarden.html">Garden</a>
+										<a class="dropdown-item" href="../05-GardenPlants/gardenPlants.html">Plants</a>
+										<!-- <div class="dropdown-divider"></div> -->
+										<a class="dropdown-item" href="../06-GardenVegetables/gardenVegetables.html">Vegetables</a>
+										<a class="dropdown-item" href="../03-ShopDecorations/shopDecorations.html">Decorations</a>
+										<a class="dropdown-item" href="../07-GardenSupliesAndTools/gardenSupliesAndTools.html">Suplies and Tools</a>
+									</div>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="../10-Blog/blog.html">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../11-Contact/contact.html">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<img src="../assets/magnifierIcon.svg" class="icon-menu">
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<img src="../assets/cartIcon.svg" class="icon-menu">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+
+
+
+            <main>
+
+                        <!-- Our Story -->
+                <div class="our-concept">
+                    <div class="our-concept-text">
+                        <p>our story</p>
+                        <p>They say that home is where the heart is. 
+                            Perhaps that's why<br> a feeling of loss is so apparent when you are far from the<br> ones you love.  
+                        </p>
+                        <div class="show-now-link">
+                            <a href="../05-GardenPlants/gardenPlants.html">SHOW NOW</a>
+                        </div>
+                    </div>
+                    <div class="suculents-container">
+                        <img src="../assets/Succulents.svg" alt="suculents image">
+                    </div>
                 </div>
-        </div>
-        <div class="post">
-                <img src="../10-Blog/Assets/img3.png">
-                <div class="post-text">
-                    <h4 class="post-title">
-                        <a href="https://www.geturbanleaf.com/blogs/why/plants-can-help-you-relax">
-                            How creating plants' environments can help you relax
-                    </a>
-                    </h4>
-                    <p>Contact with nature helps to have a better quality of life, such as creating simple environments to be used in everyday life.</p>
-                </div>
-        </div>
-        
-    </div>
-    <div class="see-all-button">
-        <a href="../10-Blog/blog.html"> See all </a>
-    </div>
 
-     </div>
-    
-     <div class="decoration-collection">
-        <div class="decoration-collection-text">
-            <h2> Our decoration collection will <br> delight you </h2>
-            <a href="../03-ShopDecorations/shopDecorations.html"> SHOP NOW </a>
-        </div>
-        <div>
-            <img src="../assets/Garden-vegetables/bench.jpeg">
-        </div>
-    </div>
-                 <footer>
+				<div class="blob-flowers">
+					<p id="meet-staff-title"> Meet our staff </p>
+					 <div class="meet-our-staff" id="Mathias">
+						<a href="" class="mathias-picture"><img src="..\assets\about-us\Mathias-picture.png" alt="Mathias"></a>
+						<p class="staff-name" id="Mathias-name"> Mathias</p>
+						<p class="staff-description"> Passionate about green and sustainable <br> environments, Mathias knows everything <br> about plants and will help you create <br> modern and creative environments.</p>
+					</div>
+					<div class="meet-our-staff" id="Monica">
+						<a href="" class="monica-picture"><img src="..\assets\about-us\Monica-picture.png" alt="Monica"></a>
+						<p class="staff-name" id="Monica-name">Monica</p>
+						<p class="staff-description"> Passionate about colors and flowers,<br> Monica knows everything about flowers <br>and will help you make everything in life <br>more colorful and flowery.</p>
+					</div>
+				</div>
+
+                        
+                        <!-- Blog -->
+
+                        <section class="blog-section">
+							<h2 class="blog-title"> Blog </h2>
+							<div class="container text-center">
+								<div class="row align-items-center">
+								  <div class="col">
+									<div class="card" style="width: 25rem;">
+										<img src="../10-Blog/Assets/img1.png" class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">
+											How gardening Can help with anxiety
+										  </h5>
+										  <p class="card-text">
+											Incorporating gardening into your routine can help you live a lighter life.
+											</p>
+										  <a href="https://www.healthline.com/health/garden-helps-my-anxiety" class="btn btn-success">See more</a>
+										</div>
+									  </div>
+								  </div>
+								  <div class="col">
+									<div class="card" style="width: 25rem;">
+										<img src="../10-Blog/Assets/img2.png" class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">
+											How to create amazing environments with plants
+										</h5>
+										  <p class="card-text">
+											Plants and ornaments can be a great ally in decorating environments.
+										</p>
+										  <a href="ttps://www.ecobee.com/en-us/citizen/how-to-create-the-perfect-environment-for-your-plants/" class="btn btn-success">See more</a>
+										</div>
+									  </div>
+								  </div>
+								  <div class="col">
+									<div class="card" style="width: 25rem;">
+										<img src="../10-Blog/Assets/img3.png" class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">
+											How creating plants' environments can help you relax
+										</h5>
+										  <p class="card-text">
+											Contact with nature helps to have a better quality of life, such as creating simple environments to be used in everyday life.
+										</p>
+										  <a href="https://www.geturbanleaf.com/blogs/why/plants-can-help-you-relax" class="btn btn-success">See more</a>
+										</div>
+									  </div>
+								  </div>
+								</div>
+							</div>
+						</section>
+
+
+                        <!-- Decoration section -->
+                <div class="decoration-collection">
+                    <div class="decoration-collection-text">
+                        <h2> Our decoration collection will <br> delight you </h2>
+                        <a href="../03-ShopDecorations/shopDecorations.html"> SHOP NOW </a>
+                    </div>
+                    <div>
+                        <img src="../assets/Garden-vegetables/bench.jpeg">
+                    </div>
+                </div>
+
+
+                
+            </main>
+            
+
+                    <!-- Footer -->
+            <footer>
                 <div class="footer1">
                     <p>
                         Harebell, your garden shop, where you<br>can find everything and more.
@@ -151,7 +198,7 @@
                         <li> Gift card </li>
                     </ul>
                     <ul>
-
+    
                         <p class="footer-list-title">About us</p>
                         <li>Our values</li>
                         <li>Sustainability</li>
@@ -185,5 +232,11 @@
                 </div>
             </footer>
         </div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
+    <script src="../11-Contact/envVar.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="home.js">   </script>
 </html>

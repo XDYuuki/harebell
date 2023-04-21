@@ -1,219 +1,405 @@
-/*specific stypes for Home Page*/
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
 
-.blob-flowers {
+/* Basic resets */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    justify-content: center;
+ }
+
+ .imgbox {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+ }
+ 
+ 
+ .imgbox p {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    right: 16px;
+    font-size: 17px;
+    padding: 2vh 4vh;
+ }
+ 
+ 
+ .imghover:hover {
+    opacity: 0.6;
+ }
+
+ .blogtitle {
+    font-family: 'Old Standard TT', serif;
+    font-size: 3.5vh;
+    padding: 15px 10px 10px 10px;
+    color: #424B25;
+    border-bottom: 1px solid #C6D794;
+ }
+
+.banner {
+    font-family: 'Abril Fatface', cursive;
+    color: #636363;
+    background-color: #C6D794;
+    text-align: center;
+    font-size: 10vh;
+    padding: 15vh;
+ }
+
+ .banner2 {
+    font-family: 'Abril Fatface', cursive;
+    color: #636363;
+    font-size: 10vh;
+    text-align: center;
+    margin-bottom: -15vh;
+ }
+
+ .more { 
+    background-color: #5F6C37;
+    margin: 20vh;
+    height: 69.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftside{
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+}
+
+.moretext {
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+.blogbutton {
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background-color:#C6D794;
+}
+
+/*Especifics styles for Home Page*/
+
+:root {
+    --darkgreen: #5F6C37;
+    --lightgreen: #C9D79C;
+    --darkgrey: #656565;
+    --headergrey: #636363;
+    --font1: 'Abril Fatface', cursive;
+    --font2: 'Quicksand', sans-serif;
+    --font3: 'Noto Sans', sans-serif;
+    --font4: 'Old Standard TT', serif;
+ }
+ 
+
+body {
+    background-image: url(../assets/blobBanner.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* background-attachment: fixed; */
+}
+
+.border {
+    border: solid red 2px;
+}
+
+.our-concept{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-concept-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+    margin-top: 200px;
+}
+
+.our-concept-text p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+    color: #363D1E;
+}
+
+.our-concept-text p:first-child {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    color: #636363;
+    font-size: 80pt;
+    margin-bottom: 20px;
+}
+
+.show-now-link {
+    background-color: #6C6C6C;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    height: 40px;
+    width: 173px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    margin-top: 46px;
+}
+
+.icons-square-banners {
+    width: 100vw;
+    background-color: #DFEABF;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-baner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 274px;
+    height: 274px;
+    background-color: white;
+
+    border-radius: 0 20px 0 20px;
+
+    margin-left: 15px;
+}
+
+.icon-baner p {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+    color: black;
+    margin-top: 5%;
+}
+
+.hover-icon {
+    display: none;
+}
+
+.icon-baner img {
+    /* width: 140px;
+    height: 140px; */
+    width: 55%;
+    height: 55%;
+}
+
+.icon-baner:hover{
+    background-color: #606060;
+}
+
+.icon-baner:hover .hover-icon {
+    display: inline;
+}
+
+.icon-baner:hover img:first-child {
+    display: none;
+}
+
+.icon-baner:hover p {
+    color: white;
+}
+
+/* carousel section */
+
+#carousel-section {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.carousel-container {
+ margin: 10vh;
+}
+
+/* .blob-flowers {
    
     background-image: url(../assets/blobFLowers.svg);
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-flex;
-    justify-content: left;
-    width: 2000px;
-    height: 1000px;
-   
-}
-
-.meet-our-staff {
-display: flex;
-flex-direction: column;
-}
-
-.staff-name {
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: #CCDB99;
-}
-
-#Mathias-name {
-    font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
-
-/* or 130% */
-letter-spacing: 0.01em;
-text-transform: capitalize;
-
-color: #5F6C37;
-
-padding-top: 20px;
-padding-bottom: 40px;
-
-}
-
-#Monica-name {
-    font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
-
-/* or 130% */
-letter-spacing: 0.01em;
-text-transform: capitalize;
-
-color: #5F6C37;
-
-padding-top: 20px;
-padding-bottom: 40px;
-}
-
-
-#meet-staff-title {
-    position: absolute;
-left: 57.93%;
-right: 8.64%;
-top: 34.81%;
-bottom: 59.11%;
-padding-top: 200px;
-
-font-family: 'Abril Fatface', cursive;
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 107.9%;
-
-/* identical to box height, or 54px */
-letter-spacing: 0.01em;
-
-color: #5F6C37;
-}
-
-#Mathias {
-    padding-left: 900px;
-    padding-top: 500px;
-
-}
-
-#Monica {
-    padding-left: 100px;
-    padding-top: 500px;
-}
-
-.staff-description {
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-padding-top: 20px;
-
-/* or 150% */
-letter-spacing: 0.01em;
-
-color: #242914;
-}
-
-.blog-banner {
-    width: 100%;
-    /* height: 885px; */
-    left: 1px;
-    /* top: 1738px; */
-    background-color: #CCDB99;
-   display: flex;
-   text-align: center;
-}
-
-.blog-banner-title {
-    width: 100%;
-    background-color: #CCDB99;
-    display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 1000px;
+    flex-direction: column;
+   
+} */
+.text-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-content h2 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    color: #5B5B5B;
+    font-size: 50pt;
+    line-height: 107.9%;
+    color: #5F6C37;
+    }
+
+.text-content p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16pt;
+    line-height: 180%;
+    color: #5F6C37;
+    margin-bottom: 10%;
 }
 
-.blog-banner-title {
-    font-family: 'Abril Fatface', cursive;
+.button-explore {
+    border: 2px solid #5F6C37;
+    border-radius: 8px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.9%;
+    color: #5F6C37;
+    width: 274px;
+    height: 40px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-sellers-banner {
+    display: inline-flex;
+    align-items: center;
+    flex-direction:row;
+    width: 100vw;
+    justify-content: space-evenly;
+    background: #F1F1F1;
+    padding: 100px 0 100px 0;
+}
+
+.best-sellers-banner h2 {
+    font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 97.9%;
     letter-spacing: 0.01em;
-    color: #5B5B5B;
-    
+    color: #000000;
 }
 
-.post {
-   width: 371px;
-   border-radius: 10px;
-   background-color: white;
-   align-items: center;
-   margin-left: 11%;
-   margin-top: 50px;
-   margin-bottom: 50px;
+.best-sellers-banner h3 {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.post p {
+.best-sellers-banner p {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    color: #242914;
-}
-
-.post-text {
-    padding: 5px 5px 5px 5px;
-}
-
-.post-title {
-    font-family: 'Old Standard TT', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+    line-height: 25px;
     letter-spacing: 0.01em;
-    text-transform: capitalize;
-    color: #5F6C37;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-transform: lowercase;
 
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: #CCDB99;
+    color: #000000;
+}
 
+.show-now-best-seller {
+    background: #363D1E;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: white;
+    height: 40px;
+    width: 173px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 46px;
    
 }
 
-.post-description {
-    display:inline-block;
-    font-family: 'Quicksand', sans-serif;
+.best-sellers-price{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.button-cart {
+    width: 200px;
+    height: 40px;
+    background: #5F6C37;
+    border-radius: 8px;
+    font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #242914;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.see-all-button {
-    background-color: #CCDB99;
-justify-content: center;
-display: flex;
-text-align: center;
-align-items: center;
-width: 100%;
-
-}
-.see-all-button a {
-    
-border: 2px solid #646464;
-border-radius: 8px;
-background-color: #CCDB99;
-justify-content: center;
-display: flex;
-text-align: center;
-align-items: center;
-width: 10%;
-margin-bottom: 10%;
+#price1, #price2 {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 5%;
 }
 
 .decoration-collection {
@@ -257,3 +443,200 @@ margin-bottom: 10%;
     font-size: 16px;
     line-height: 97.9%;
 }
+
+/* Blog Section */
+
+.blog-section {
+    height: 80vh;
+    background-color: #C6D794;
+    width: 100%;
+    font-family: var(--font2);
+}
+
+.blog-title { 
+    text-align: center;
+    font-family: var(--font4);
+    color: var(--darkgreen);
+    font-size: 3.5em;
+    padding: 5vh;
+}
+
+/* Newsletter */
+
+.newsletter {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+input {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #767676;
+}
+
+.newsletter h2{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #5F6C37;
+}
+
+.newsletter h3 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #535353;
+}
+
+.newsletter input {
+    box-sizing: border-box;
+    width: 715px;
+    height: 68px;
+    background: #FFFFFF;
+    border: 1px solid #5C5C5C;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter button {
+    border: 2px solid #646464;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #CCDB99;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #767676;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.blob-flowers {
+   
+    background-image: url(../assets/blobFLowers.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: left;
+    width: 2000px;
+    height: 1000px;
+   
+}
+
+.meet-our-staff {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .staff-name {
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-color: #CCDB99;
+    }
+    
+    #Mathias-name {
+        font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    
+    /* or 130% */
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    
+    color: #5F6C37;
+    
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+    }
+    
+    #Monica-name {
+        font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    
+    /* or 130% */
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    
+    color: #5F6C37;
+    
+    padding-top: 20px;
+    padding-bottom: 40px;
+    }
+    
+    
+    #meet-staff-title {
+    position: absolute;
+    left: 57.93%;
+    right: 8.64%;
+    top: 34.81%;
+    bottom: 59.11%;
+    padding-top: 200px;
+    
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 107.9%;
+    
+    /* identical to box height, or 54px */
+    letter-spacing: 0.01em;
+    
+    color: #5F6C37;
+    }
+    
+    #Mathias {
+        padding-left: 900px;
+        padding-top: 500px;
+    
+    }
+    
+    #Monica {
+        padding-left: 100px;
+        padding-top: 500px;
+    }
+    
+    .staff-description {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+    
+    /* or 150% */
+    letter-spacing: 0.01em;
+    
+    color: #242914;
+    }

@@ -1,4 +1,94 @@
 /*Especifics stypes for Decoration Page*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    justify-content: center;
+ }
+
+ .imgbox {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+ }
+ 
+ 
+ .imgbox p {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    right: 16px;
+    font-size: 17px;
+    padding: 2vh 4vh;
+ }
+ 
+ 
+ .imghover:hover {
+    opacity: 0.6;
+ }
+
+ .blogtitle {
+    font-family: 'Old Standard TT', serif;
+    font-size: 3.5vh;
+    padding: 15px 10px 10px 10px;
+    color: #424B25;
+    border-bottom: 1px solid #C6D794;
+ }
+
+.banner {
+    font-family: 'Abril Fatface', cursive;
+    color: #636363;
+    background-color: #C6D794;
+    text-align: center;
+    font-size: 10vh;
+    padding: 15vh;
+ }
+
+ .banner2 {
+    font-family: 'Abril Fatface', cursive;
+    color: #636363;
+    font-size: 10vh;
+    text-align: center;
+    margin-bottom: -15vh;
+ }
+
+ .more { 
+    background-color: #5F6C37;
+    margin: 20vh;
+    height: 69.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftside{
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+}
+
+.moretext {
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+.blogbutton {
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background-color:#C6D794;
+}
 
 .banner {
     margin: auto;
